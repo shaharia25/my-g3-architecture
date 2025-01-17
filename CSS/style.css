@@ -67,7 +67,7 @@ header{
     margin-bottom: 30px;
 }
 /* header section design complete */
-@media screen and (max-width:412px) {
+@media screen and (max-width:360px) {
     .navbar-container{
         flex-direction: column;
         width: 100%;
