@@ -1,6 +1,14 @@
 *{
     margin: 0;
 }
+.work-sans-cmn{
+  font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.fon16{
+    font-size: 16px;
+}
 header{
     background-color: rgba(255, 144, 14, 0.1);
 }
@@ -47,7 +55,7 @@ header{
 }
 
 .banner-content{
- margin-top: 50px;
+margin-top: 50px;
 }
 .banner-brand, .banner-dtls, .div-btn{
     text-align: center;
@@ -67,7 +75,7 @@ header{
     margin-bottom: 30px;
 }
 /* header section design complete */
-@media screen and (max-width:360px) {
+@media screen and (max-width:412px) {
     .navbar-container{
         flex-direction: column;
         width: 100%;
@@ -80,4 +88,46 @@ header{
     .banner-brand{
         font-size: 3rem;
     }
+}
+/* Feature section start */
+.feature-container{
+    display: flex;
+    margin-top: 80px;
+}
+.feature-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.feature-content{
+    max-width: 412px;
+    /* margin-left: 130px; */
+}
+.quick-mdm{
+    font-weight: 500;
+}
+.feature-clr{
+    color: #FF900E;
+}
+.content-p{
+    color:#727272 ;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+@media screen and (max-width:412px) {
+    .feature-container{
+        flex-direction:column;
+    }
+    .feature-img{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .feature-content{
+        margin-left: 0px;
+        background-color: red;
+        width: 400px;
+    }
+    
+    
+    
 }
